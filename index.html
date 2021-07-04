@@ -86,38 +86,104 @@
 
 /* left content */
         .left{
-            border: solid blue;
+            border: 1px solid #6e6e6e42;
+            width: 255px;
+            margin-top: 35px;
         }
 
 
 /* center content */
 
         .center{
-
-
+            flex-grow: 1;
+            margin-top: 35px;
+            margin-left: 25px;
+            margin-right: 25px;
         }
 
         .create-post{
-
-        }
-
-        .create-post-top{
+            background-color: white;
+            height: 120px;
+            width: 540px;
+            border: 1px solid #6e6e6e42;
+            border-radius: 5px;
 
         }
 
         .post-image{
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
 
+        .create-post-top{
+            display: flex;
         }
 
         .post-input{
+            height: 40px;
+            flex: 1;
+            border-radius: 25px;
+            border: 1px solid #aaa;
+            margin: 14px;
+            text-indent: 15px;
 
         }
+
+        .create-post-bottom{
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .post-button{
+            background-color: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            color: #00000099;
+
+
+        }
+        .mr-10{
+            margin-right: 10px;
+        }
+        .blue-button{
+            color: #70b5f9;
+        }
+        .green-button{
+            color: #7fc15e;
+        }
+
+        .orange-button{
+            color: #e7a33e;
+        }
+
+        .pink-button{
+            color: #f89295;
+        }
+
+        
+
+        .posts-hr{
+
+
+
+        }
+
+
+
 
 
 
 /* right content */
         .right{
-            border: solid blue;
+            border: solid #6e6e6e42;
+            width: 300px;
+            margin-top: 35px;
         }
 
 
@@ -129,7 +195,7 @@
 
 
 <body>
-<!--navigation bar-->
+    <!--navigation bar-->
     <header class="navbar">
         <div class="nav-content">
             <div class="nav-img">
@@ -174,47 +240,61 @@
         </div>
     </header>
 
-<!--main page-->
+    <!--main page-->
     <div class="main">
-<!--left-->
+        <!--left-->
         <div class="left">left
 
 
-
-
-
-
-
-
-
-
         </div>
 
 
-<!--center-->
+        <!--center-->
         <div class="center">
             <div class="create-post">
                 <div class="create-post-top"></div>
-                <img src="User.jpeg" alt="" class="post-image">
-                <input type="text" class="post-input" placeholder="Start a post">
+                <img src="profpic.jpeg" alt="" class="post-image">
+                <input class="post-input" type="text"  placeholder="Start a post">
             </div>
+            <div class="create-post-bottom">
+                <button class="post-button">
+                    <span class="material-icons blue-button mr-10">
+                        image
+                        </span>
+                    Photo
+                </button>
+
+                <button class="post-button">
+                    <span class="material-icons green-button mr-10">
+                        smart_display
+                        </span>
+                    Video
+                </button>
+
+                <button class="post-button">
+                    <span class="material-icons orange-button mr-10">
+                        calendar_today
+                        </span>
+                    Event
+                </button>
+
+                <button class="post-button">
+                    <span class="material-icons pink-button mr-10">
+                        feed
+                        </span>
+                    Write article
+                </button>
+            </div>
+
+            <div class="posts-hr"></div>
 
 
 
 
 
         </div>
-<!--right-->
+        <!--right-->
         <div class="right">right
-
-
-
-
-
-
-
-
-
 
 
         </div>
