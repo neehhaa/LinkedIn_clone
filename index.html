@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,23 @@
 
     <style>
         body,
-        html{
+        html {
             height: 100%;
             width: 100%;
             margin: 0;
-            font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         }
-        body{
+
+        body {
             background-color: #f3f2ef;
         }
 
 
 
-/*navigation*/
+        /*navigation*/
 
-        .navbar{
+        .navbar {
             background-color: white;
             width: 100vw;
             height: 60px;
@@ -33,19 +35,20 @@
             top: 0;
             left: 0;
         }
-        .nav-content{
+
+        .nav-content {
             display: flex;
             align-items: center;
             margin: 0 auto;
             margin-top: 10px;
         }
 
-        .nav-img{
+        .nav-img {
             margin-left: 6%;
             color: #0a66c2;
         }
 
-        .nav-search{
+        .nav-search {
             height: 35px;
             width: 270px;
             margin-left: 7px;
@@ -55,13 +58,13 @@
             text-indent: 12px;
         }
 
-        .navigation{
+        .navigation {
             margin-left: 12%;
             display: flex;
             align-items: center;
         }
 
-        .nav-icon{
+        .nav-icon {
             text-decoration: none;
             color: #666;
             display: flex;
@@ -73,35 +76,35 @@
             font-weight: 300;
         }
 
-        .main{
+        .main {
             height: 100%;
             display: flex;
             margin: 0 auto;
             margin-top: 70px;
             max-width: 60%;
-            
+
         }
-        
 
 
-/* left content */
-        .left{
+
+        /* left content */
+        .left {
             border: 1px solid #6e6e6e42;
             width: 255px;
             margin-top: 35px;
         }
 
 
-/* center content */
+        /* center content */
 
-        .center{
+        .center {
             flex-grow: 1;
             margin-top: 35px;
             margin-left: 25px;
             margin-right: 25px;
         }
 
-        .create-post{
+        .create-post {
             background-color: white;
             height: 120px;
             width: 540px;
@@ -110,7 +113,7 @@
 
         }
 
-        .post-image{
+        .post-image {
             height: 48px;
             width: 48px;
             border-radius: 50%;
@@ -118,11 +121,11 @@
             margin-left: 10px;
         }
 
-        .create-post-top{
+        .create-post-top {
             display: flex;
         }
 
-        .post-input{
+        .post-input {
             height: 40px;
             flex: 1;
             border-radius: 25px;
@@ -132,13 +135,13 @@
 
         }
 
-        .create-post-bottom{
+        .create-post-bottom {
             display: flex;
             justify-content: space-around;
 
         }
 
-        .post-button{
+        .post-button {
             background-color: transparent;
             border: none;
             display: flex;
@@ -148,30 +151,33 @@
 
 
         }
-        .mr-10{
+
+        .mr-10 {
             margin-right: 10px;
         }
-        .blue-button{
+
+        .blue-button {
             color: #70b5f9;
         }
-        .green-button{
+
+        .green-button {
             color: #7fc15e;
         }
 
-        .orange-button{
+        .orange-button {
             color: #e7a33e;
         }
 
-        .pink-button{
+        .pink-button {
             color: #f89295;
         }
 
-        
-
-        .posts-hr{
 
 
-
+        .posts-hr {
+            border-top: 1px solid #000000aa;
+            margin-top: 30px;
+            border-color: #00000033;
         }
 
 
@@ -179,17 +185,13 @@
 
 
 
-/* right content */
-        .right{
-            border: solid #6e6e6e42;
+
+        /* right content */
+        .right {
+            border: 1px solid #6e6e6e42;
             width: 300px;
             margin-top: 35px;
         }
-
-
-
-
-
     </style>
 </head>
 
@@ -199,15 +201,19 @@
     <header class="navbar">
         <div class="nav-content">
             <div class="nav-img">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" class="global-nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+                    class="global-nav__logo">
                     <title>
-                      LinkedIn
+                        LinkedIn
                     </title>
-              
+
                     <g>
-              <!---->        <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+                        <!---->
+                        <path
+                            d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                            fill="currentColor"></path>
                     </g>
-                  </svg>
+                </svg>
             </div>
             <input type="text" class="nav-search" placeholder="Search for jobs, people, posts... ">
             <nav class="navigation">
@@ -235,7 +241,7 @@
                     <span class="material-icons">account_circle</span>
                     Me
                 </a>
-            
+
             </nav>
         </div>
     </header>
@@ -252,40 +258,41 @@
         <!--center-->
         <div class="center">
             <div class="create-post">
-                <div class="create-post-top"></div>
-                <img src="profpic.jpeg" alt="" class="post-image">
-                <input class="post-input" type="text"  placeholder="Start a post">
+                <div class="create-post-top">
+                    <img src="profpic.jpeg" alt="" class="post-image">
+                    <input class="post-input" type="text" placeholder="Start a post">
+                </div>
+
+                <div class="create-post-bottom">
+                    <button class="post-button">
+                        <span class="material-icons blue-button mr-10">
+                            image
+                        </span>
+                        Photo
+                    </button>
+
+                    <button class="post-button">
+                        <span class="material-icons green-button mr-10">
+                            smart_display
+                        </span>
+                        Video
+                    </button>
+
+                    <button class="post-button">
+                        <span class="material-icons orange-button mr-10">
+                            calendar_today
+                        </span>
+                        Event
+                    </button>
+
+                    <button class="post-button">
+                        <span class="material-icons pink-button mr-10">
+                            feed
+                        </span>
+                        Write article
+                    </button>
+                </div>
             </div>
-            <div class="create-post-bottom">
-                <button class="post-button">
-                    <span class="material-icons blue-button mr-10">
-                        image
-                        </span>
-                    Photo
-                </button>
-
-                <button class="post-button">
-                    <span class="material-icons green-button mr-10">
-                        smart_display
-                        </span>
-                    Video
-                </button>
-
-                <button class="post-button">
-                    <span class="material-icons orange-button mr-10">
-                        calendar_today
-                        </span>
-                    Event
-                </button>
-
-                <button class="post-button">
-                    <span class="material-icons pink-button mr-10">
-                        feed
-                        </span>
-                    Write article
-                </button>
-            </div>
-
             <div class="posts-hr"></div>
 
 
@@ -301,4 +308,5 @@
 
     </div>
 </body>
+
 </html>
